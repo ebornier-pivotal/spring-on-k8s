@@ -1,4 +1,4 @@
-# Run your Spring Boot app on Kubernetes
+# Run your Spring Boot app on Kubernetes 
 
 This project describes how to run your Spring Boot app on Kubernetes.
 You don't actually need to rewrite your app in order to target a K8s
