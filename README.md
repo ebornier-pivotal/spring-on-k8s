@@ -41,7 +41,7 @@ this app in a Docker image.
 
 Here's a `Dockerfile` you can use:
 ```Dockerfile
-# 1. First we build this app.
+# 1. First we build this app .
 FROM adoptopenjdk:8-jdk-hotspot as BUILDER
 RUN mkdir /build
 ADD . /build
