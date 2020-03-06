@@ -36,6 +36,6 @@ class HelloController {
         // Just return a simple String.
         // This app is using reactive programming, but feel free to use legacy
         // REST controllers: it's up to you!
-        return Mono.just("Hello world from here prepration");
+        return Mono.just("Hello world from AFKLM");
     }
 }
