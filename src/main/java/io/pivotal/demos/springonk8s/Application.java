@@ -33,7 +33,7 @@ public class Application {
 
 @RestController
 class HelloController {
-    @GetMapping("/app/")
+    @GetMapping("/")
     public Mono<String> greeting() throws UnknownHostException {
         // Just return a simple String.
         // This app is using reactive programming, but feel free to use legacy
