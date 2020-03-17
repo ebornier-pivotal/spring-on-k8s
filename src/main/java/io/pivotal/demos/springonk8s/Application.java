@@ -21,6 +21,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
 @SpringBootApplication
 public class Application {
@@ -32,10 +34,11 @@ public class Application {
 @RestController
 class HelloController {
     @GetMapping("/app/")
-    public Mono<String> greeting() {
+    public Mono<String> greeting() throws UnknownHostException {
         // Just return a simple String.
         // This app is using reactive programming, but feel free to use legacy
         // REST controllers: it's up to you!
-        return Mono.just("a Hello world from AFKLM");
+        String hostname = InetAddress.getLocalHost().getCanonicalHostName();
+        return Mono.just("a Hello world from " + hostname);
     }
 }
