@@ -39,6 +39,6 @@ class HelloController {
         // This app is using reactive programming, but feel free to use legacy
         // REST controllers: it's up to you!
         String hostname = InetAddress.getLocalHost().getCanonicalHostName();
-        return Mono.just("a Hello world from " + hostname);
+        return Mono.just("a new Hello world from " + hostname);
     }
 }
